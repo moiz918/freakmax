@@ -1,0 +1,141 @@
+/* Admin Payments Black-Orange Theme */
+.admin-payments-dark-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  min-height: 100vh;
+}
+
+.admin-payments-dark-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #f2f2f2;
+}
+
+.admin-payments-dark-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #FF6B00;
+}
+
+.admin-payments-dark-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.admin-payments-dark-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #222;
+  border-top: 5px solid #FF6B00;
+  border-radius: 50%;
+  animation: admin-payments-spin 1s linear infinite;
+}
+
+.admin-payments-dark-error {
+  background-color: #330000;
+  border: 1px solid #ff4d4d;
+  color: #ff9999;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.admin-payments-dark-table-container {
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+
+.admin-payments-dark-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  box-shadow: 0 1px 3px rgba(255, 107, 0, 0.1);
+}
+
+.admin-payments-dark-table th {
+  background-color: #222;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #FF6B00;
+  border-bottom: 2px solid #333;
+}
+
+.admin-payments-dark-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+  color: #f2f2f2;
+}
+
+.admin-payments-dark-table tr:hover {
+  background-color: #1f1f1f;
+  box-shadow: 0 0 8px rgba(255, 107, 0, 0.2);
+}
+
+.admin-payments-dark-user-name {
+  font-weight: 500;
+  color: #FF6B00;
+}
+
+.admin-payments-dark-user-email {
+  font-size: 13px;
+  color: #A0A0A0;
+}
+
+.admin-payments-dark-amount {
+  text-align: right;
+  font-weight: 500;
+  color: #FF6B00;
+}
+
+.admin-payments-dark-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin-payments-dark-status-completed {
+  background-color: #142010;
+  color: #33cc33;
+}
+
+.admin-payments-dark-status-pending {
+  background-color: #332000;
+  color: #FF8C00;
+}
+
+.admin-payments-dark-status-failed {
+  background-color: #330000;
+  color: #FF4500;
+}
+
+.admin-payments-dark-empty {
+  text-align: center;
+  padding: 40px 0;
+  color: #A0A0A0;
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .admin-payments-dark-content {
+    padding: 15px;
+  }
+
+  .admin-payments-dark-table th,
+  .admin-payments-dark-table td {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@keyframes admin-payments-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

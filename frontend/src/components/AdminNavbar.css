@@ -1,0 +1,59 @@
+.AdminNavbar {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .AdminNavbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .AdminNavbar-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .AdminNavbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: none;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  .AdminNavbar-links a:hover {
+    color: #4CAF50;
+  }
+  
+  .AdminNavbar-active {
+    color: #4CAF50;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+  }
+  
+  .AdminNavbar-logoutBtn {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AdminNavbar-logoutBtn:hover {
+    background-color: #c9302c;
+  }

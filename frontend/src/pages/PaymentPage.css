@@ -1,0 +1,159 @@
+.PaymentPage {
+    background-color: #000;
+    min-height: 100vh;
+    color: #f97316;
+    padding: 20px;
+  }
+  
+  .PaymentPage-nav {
+    background-color: #111;
+    padding: 15px;
+    border-bottom: 2px solid #f97316;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .PaymentPage-backBtn {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .PaymentPage-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .PaymentPage-navLinks {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .PaymentPage-navLink {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .PaymentPage-navLink:hover {
+    background-color: #f97316;
+    color: #000;
+  }
+  
+  .PaymentPage-logoutBtn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .PaymentPage-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .PaymentPage-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #f97316;
+  }
+  
+  .PaymentPage-card {
+    background-color: #111;
+    border: 1px solid #f97316;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .PaymentPage-cardTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #f97316;
+  }
+  
+  .PaymentPage-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .PaymentPage-label {
+    font-weight: bold;
+    color: #f97316;
+  }
+  
+  .PaymentPage-value {
+    color: #e5e5e5;
+  }
+  
+  .PaymentPage-select {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #f97316;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .PaymentPage-error {
+    background-color: #450a0a;
+    color: #fca5a5;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ef4444;
+  }
+  
+  .PaymentPage-success {
+    background-color: #1a2e05;
+    color: #86efac;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #22c55e;
+  }
+  
+  .PaymentPage-buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .PaymentPage-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .PaymentPage-cancelBtn {
+    background-color: #333;
+    color: #f97316;
+    border: none;
+  }
+  
+  .PaymentPage-submitBtn {
+    background-color: #f97316;
+    color: #000;
+    border: none;
+  }
+  
+  .PaymentPage-submitBtn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }

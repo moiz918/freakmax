@@ -1,0 +1,262 @@
+/* Admin Movies Page - Dark Theme */
+.admin-movies-wrapper {
+    background-color: #121212;
+    min-height: 100vh;
+    color: #e0e0e0;
+    padding: 20px;
+  }
+  
+  .admin-movies-wrapper .admin-movies-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Alerts */
+  .admin-movies-wrapper .alert {
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  .admin-movies-wrapper .alert.error {
+    background-color: #422;
+    color: #ff6e6e;
+    border-left: 4px solid #ff5252;
+  }
+  
+  .admin-movies-wrapper .alert.success {
+    background-color: #242;
+    color: #76ff76;
+    border-left: 4px solid #4caf50;
+  }
+  
+  /* Movie Grid - Vertical Layout */
+  .admin-movies-wrapper .movies-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  /* Movie Cards */
+  .admin-movies-wrapper .movie-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+  }
+  
+  .admin-movies-wrapper .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 140, 0, 0.2);
+  }
+  
+  /* Movie Poster - Vertical Layout */
+  .admin-movies-wrapper .movie-poster-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #252525;
+  }
+  
+  .admin-movies-wrapper .movie-poster {
+    width: 200px;
+    height: 300px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .admin-movies-wrapper .movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .admin-movies-wrapper .movie-poster img:hover {
+    transform: scale(1.03);
+  }
+  
+  .admin-movies-wrapper .no-image {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* Movie Details */
+  .admin-movies-wrapper .movie-details {
+    padding: 20px;
+  }
+  
+  .admin-movies-wrapper .movie-details h3 {
+    margin: 0 0 15px 0;
+    color: #ff8c00;
+    font-size: 1.4rem;
+  }
+  
+  .admin-movies-wrapper .movie-details p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #bbb;
+  }
+  
+  .admin-movies-wrapper .movie-details strong {
+    color: #ff8c00;
+  }
+  
+  /* Movie Actions */
+  .admin-movies-wrapper .movie-actions {
+    display: flex;
+    padding: 0 20px 20px;
+    gap: 12px;
+  }
+  
+  /* Forms */
+  .admin-movies-wrapper .add-movie-form,
+  .admin-movies-wrapper .edit-form {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+  }
+  
+  .admin-movies-wrapper .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .admin-movies-wrapper .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #ff8c00;
+  }
+  
+  .admin-movies-wrapper .form-group input,
+  .admin-movies-wrapper .form-group select,
+  .admin-movies-wrapper .form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background: #252525;
+    border: 1px solid #444;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #e0e0e0;
+  }
+  
+  .admin-movies-wrapper .form-group input:focus,
+  .admin-movies-wrapper .form-group select:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.2);
+  }
+  
+  /* Buttons */
+  .admin-movies-wrapper .btn-edit,
+  .admin-movies-wrapper .btn-delete,
+  .admin-movies-wrapper .btn-save,
+  .admin-movies-wrapper .btn-cancel,
+  .admin-movies-wrapper .btn-add {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .admin-movies-wrapper .btn-edit {
+    background-color: #ff8c00;
+    color: #121212;
+  }
+  
+  .admin-movies-wrapper .btn-delete {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .admin-movies-wrapper .btn-save {
+    background-color: #388e3c;
+    color: white;
+  }
+  
+  .admin-movies-wrapper .btn-cancel {
+    background-color: #616161;
+    color: white;
+  }
+  
+  .admin-movies-wrapper .btn-add {
+    background-color: #ff8c00;
+    color: #121212;
+    padding: 12px 24px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .admin-movies-wrapper .btn-edit:hover,
+  .admin-movies-wrapper .btn-delete:hover,
+  .admin-movies-wrapper .btn-save:hover,
+  .admin-movies-wrapper .btn-cancel:hover,
+  .admin-movies-wrapper .btn-add:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .admin-movies-wrapper .btn-edit:active,
+  .admin-movies-wrapper .btn-delete:active,
+  .admin-movies-wrapper .btn-save:active,
+  .admin-movies-wrapper .btn-cancel:active,
+  .admin-movies-wrapper .btn-add:active {
+    transform: translateY(0);
+  }
+  
+  /* Form Actions */
+  .admin-movies-wrapper .form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Headings */
+  .admin-movies-wrapper h2 {
+    color: #ff8c00;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ff8c00;
+    font-size: 1.8rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .admin-movies-wrapper .movie-card {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .admin-movies-wrapper .movie-poster-container {
+      width: 250px;
+      flex-shrink: 0;
+      padding: 25px;
+    }
+    
+.admin-movies-wrapper .movie-details {
+  padding: 20px 20px 20px 40px; 
+}
+
+    
+    .admin-movies-wrapper .movie-actions {
+      padding: 0 25px 25px 0;
+      align-self: flex-end;
+    }
+  }

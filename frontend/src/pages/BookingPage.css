@@ -1,0 +1,197 @@
+.BookingPage-container {
+  min-height: 100vh;
+  background-color: #000;
+  color: #f97316;
+  padding: 1rem;
+}
+
+.BookingPage-navigation {
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #f97316;
+  padding: 1rem 0;
+}
+
+.BookingPage-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f97316;
+  text-decoration: none;
+}
+
+.BookingPage-navLink {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #333;
+  color: #f97316;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.BookingPage-navLink:hover {
+  background-color: #f97316;
+  color: #000;
+}
+
+.BookingPage-logoutBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #f97316;
+  color: #000;
+  font-weight: 600;
+}
+
+.BookingPage-logoutBtn:hover {
+  background-color: #ff8c00;
+}
+
+.BookingPage-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #f97316;
+  text-shadow: 0 2px 4px rgba(251, 146, 60, 0.4);
+}
+
+.BookingPage-error {
+  background-color: #450a0a;
+  color: #fca5a5;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #ef4444;
+}
+
+.BookingPage-showInfo {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f97316;
+  margin-bottom: 2rem;
+}
+
+.BookingPage-infoLabel {
+  font-weight: 600;
+  color: #f97316;
+}
+
+.BookingPage-infoValue {
+  color: #e5e5e5;
+  margin-left: 0.5rem;
+}
+
+.BookingPage-seatGrid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.BookingPage-seat {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.BookingPage-seatAvailable {
+  background-color: #333;
+  color: #f97316;
+}
+
+.BookingPage-seatAvailable:hover {
+  background-color: #f97316;
+  color: #000;
+}
+
+.BookingPage-seatSelected {
+  background-color: #f97316;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(251, 146, 60, 0.5);
+}
+
+.BookingPage-seatUnavailable {
+  background-color: #111;
+  color: #444;
+  cursor: not-allowed;
+}
+
+.BookingPage-selectedSeats {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.BookingPage-proceedBtn {
+  background-color: #f97316;
+  color: #000;
+  padding: 0.75rem 2rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.BookingPage-proceedBtn:hover {
+  background-color: #ff8c00;
+}
+
+.BookingPage-reviewContainer {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #f97316;
+}
+
+.BookingPage-reviewTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #f97316;
+}
+
+.BookingPage-reviewItem {
+  margin-bottom: 0.5rem;
+}
+
+.BookingPage-confirmBtn {
+  background-color: #f97316;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.BookingPage-confirmBtn:hover {
+  background-color: #ff8c00;
+}
+
+.BookingPage-backBtn {
+  background-color: #333;
+  color: #f97316;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  transition: background-color 0.2s;
+}
+
+.BookingPage-backBtn:hover {
+  background-color: #444;
+}
+
+.BookingPage-buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}

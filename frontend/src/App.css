@@ -1,0 +1,77 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e0e0e; /* deep black background */
+  color: #f5f5f5; /* light text */
+}
+
+a {
+  text-decoration: none;
+  color: #ffa500; /* orange links */
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #ff6a00; /* deep orange button */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc5500; /* darker orange on hover */
+}
+
+input, select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ff6a00;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  outline: none;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+select {
+  background-color: #1a1a1a;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  color: #ffa500;
+}
+
+.error {
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Optional styling for cards/lists */
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+}
+
+h1, h2, h3, h4 {
+  color: #ffa500;
+}
+
+nav {
+  background-color: #1a1a1a;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ff6a00;
+}

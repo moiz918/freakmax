@@ -1,0 +1,142 @@
+.UserSignupContainer {
+    min-height: 100vh;
+    background: #000000;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.UserSignupForm {
+    background: rgba(26, 26, 26, 0.9);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.UserSignupTitle {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    color: #ff6600;
+    text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.UserSignupErrorMessage {
+    color: #ff3333;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: 1px solid #ff3333;
+}
+
+.UserSignupFormElement {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.UserSignupFormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.UserSignupLabel {
+    color: #ff6600;
+    font-size: 1.1rem;
+}
+
+.UserSignupInput {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    color: #ff6600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    caret-color: #ff6600;
+}
+
+.UserSignupInput:focus {
+    outline: none;
+    border-color: #ff9933;
+    box-shadow: 0 0 10px rgba(255, 153, 51, 0.5);
+}
+
+.UserSignupShowPassword {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    color: #ff9933;
+    font-size: 0.9rem;
+}
+
+.UserSignupShowPassword input {
+    accent-color: #ff6600;
+}
+
+.UserSignupButton {
+    padding: 1rem;
+    background: #ff6600;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: 'Bebas Neue', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.UserSignupButton:hover {
+    background: #ff8533;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(255, 102, 0, 0.4);
+}
+
+.UserSignupButton:disabled {
+    background: #b35900;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.UserSignupLoginLink {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #ff9933;
+}
+
+.UserSignupLoginText {
+    color: #ff6600;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.UserSignupLoginText:hover {
+    color: #ff8533;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');

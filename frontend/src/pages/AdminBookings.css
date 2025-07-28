@@ -1,0 +1,182 @@
+.AdminBookings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #000;
+    min-height: 100vh;
+  }
+  
+  .AdminBookings-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #f97316;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .AdminBookings-alertError {
+    background-color: #220000;
+    border-left: 4px solid #ff3e3e;
+    color: #ff6b6b;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .AdminBookings-alertSuccess {
+    background-color: #002200;
+    border-left: 4px solid #00cc00;
+    color: #66ff66;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .AdminBookings-tableContainer {
+    overflow-x: auto;
+    background-color: #111;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(246, 103, 22, 0.1);
+  }
+  
+  .AdminBookings-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .AdminBookings-tableHead {
+    background-color: #1a1a1a;
+  }
+  
+  .AdminBookings-tableHeader {
+    padding: 1rem;
+    text-align: left;
+    color: #f97316;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .AdminBookings-tableRow {
+    border-bottom: 1px solid #333;
+  }
+  
+  .AdminBookings-tableRow:last-child {
+    border-bottom: none;
+  }
+  
+  .AdminBookings-tableRow:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .AdminBookings-tableCell {
+    padding: 1rem;
+    color: #e2e2e2;
+  }
+  
+  .AdminBookings-tableCellCenter {
+    text-align: center;
+  }
+  
+  .AdminBookings-statusPending {
+    background-color: #3d2709;
+    color: #ffa726;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .AdminBookings-statusComplete {
+    background-color: #0a2e0a;
+    color: #66bb6a;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .AdminBookings-statusCancelled {
+    background-color: #3d0a0a;
+    color: #ef5350;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .AdminBookings-select {
+    padding: 0.5rem;
+    background-color: #1a1a1a;
+    color: #f97316;
+    border: 1px solid #333;
+    border-radius: 4px;
+    min-width: 120px;
+  }
+  
+  .AdminBookings-buttonPrimary {
+    background-color: #f97316;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 0.5rem;
+  }
+  
+  .AdminBookings-buttonPrimary:hover {
+    background-color: #ff8c00;
+  }
+  
+  .AdminBookings-buttonSecondary {
+    background-color: #333;
+    color: #f97316;
+    padding: 0.5rem 1rem;
+    border: 1px solid #f97316;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .AdminBookings-buttonSecondary:hover {
+    background-color: #444;
+  }
+  
+  .AdminBookings-buttonWarning {
+    background-color: #ff9800;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 0.5rem;
+  }
+  
+  .AdminBookings-buttonWarning:hover {
+    background-color: #ffa726;
+  }
+  
+  .AdminBookings-buttonDanger {
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .AdminBookings-buttonDanger:hover {
+    background-color: #f44336;
+  }

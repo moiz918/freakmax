@@ -1,0 +1,117 @@
+.AdminUsersContainer {
+    min-height: 100vh;
+    background: #000000;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: #ff6600;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.AdminUsersContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.AdminUsersTitle {
+    font-size: 2.5rem;
+    color: #ff6600;
+    text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+    letter-spacing: 0.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.AdminUsersErrorMessage {
+    color: #ff3333;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: 1px solid #ff3333;
+}
+
+.AdminUsersSuccessMessage {
+    color: #5cb85c;
+    background: rgba(92, 184, 92, 0.1);
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: 1px solid #5cb85c;
+}
+
+.AdminUsersTabs {
+    display: flex;
+    border-bottom: 1px solid #ff6600;
+    margin-bottom: 30px;
+}
+
+.AdminUsersTabButton {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    color: #ff9933;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.AdminUsersTabActive {
+    color: #ff6600;
+    border-bottom: 3px solid #ff6600;
+    font-weight: bold;
+}
+
+.AdminUsersTableContainer {
+    overflow-x: auto;
+    background-color: rgba(26, 26, 26, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+}
+
+.AdminUsersTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.AdminUsersTable th {
+    background-color: rgba(255, 102, 0, 0.2);
+    color: #ff6600;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.AdminUsersTable td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 102, 0, 0.1);
+    color: #ff9933;
+}
+
+.AdminUsersTable tr:hover {
+    background-color: rgba(255, 102, 0, 0.05);
+}
+
+.AdminUsersBanButton {
+    padding: 8px 16px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.AdminUsersBanButton:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');

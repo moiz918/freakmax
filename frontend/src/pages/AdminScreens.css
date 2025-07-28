@@ -1,0 +1,284 @@
+/* Admin Screens Dark Theme - Black & Orange */
+:root {
+  --primary-bg: #121212;
+  --primary-text: #e0e0e0;
+  --accent-color: #FF8C00;       /* Primary orange */
+  --accent-light: #FFA500;       /* Bright orange */
+  --accent-dark: #FF4500;        /* Dark orange-red */
+  --card-bg: #1E1E1E;
+  --border-color: #333;
+  --success-color: #4CAF50;      /* Green for success */
+  --error-color: #FF4500;        /* Orange-red for errors */
+}
+
+.admin-screens-container {
+  background-color: var(--primary-bg);
+  min-height: 100vh;
+  color: var(--primary-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-screens-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Typography */
+.admin-screens-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 8px;
+}
+
+.admin-screens-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--accent-color);
+}
+
+/* Loading Spinner */
+.admin-screens-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.admin-screens-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--border-color);
+  border-top: 5px solid var(--accent-color);
+  border-radius: 50%;
+  animation: admin-screens-spin 1s linear infinite;
+}
+
+@keyframes admin-screens-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Notifications */
+.admin-screens-notification {
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.admin-screens-notification-success {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--success-color);
+  border-left: 4px solid var(--success-color);
+}
+
+.admin-screens-notification-error {
+  background-color: rgba(255, 69, 0, 0.1);
+  color: var(--error-color);
+  border-left: 4px solid var(--error-color);
+}
+
+/* Forms and Cards */
+.admin-screens-form,
+.admin-screens-filter {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 10px rgba(255, 140, 0, 0.1);
+}
+
+.admin-screens-form-group {
+  margin-bottom: 16px;
+}
+
+.admin-screens-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.admin-screens-form-group select,
+.admin-screens-form-group input {
+  width: 100%;
+  padding: 10px;
+  background-color: #252525;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--primary-text);
+  font-size: 16px;
+}
+
+.admin-screens-form-group select:focus,
+.admin-screens-form-group input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.2);
+}
+
+/* Buttons */
+.admin-screens-submit-btn {
+  background-color: var(--accent-color);
+  color: #121212;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.admin-screens-submit-btn:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+/* Table */
+.admin-screens-table-container {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(255, 140, 0, 0.1);
+}
+
+.admin-screens-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-screens-table th {
+  background-color: #252525;
+  padding: 12px 16px;
+  text-align: left;
+  color: var(--accent-color);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.admin-screens-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.admin-screens-table tr:hover {
+  background-color: #252525;
+}
+
+/* Action Buttons */
+.admin-screens-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-screens-edit-btn,
+.admin-screens-delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.admin-screens-edit-btn {
+  background-color: var(--accent-color);
+  color: #121212;
+}
+
+.admin-screens-edit-btn:hover {
+  background-color: var(--accent-light);
+}
+
+.admin-screens-delete-btn {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.admin-screens-delete-btn:hover {
+  background-color: #cc3700;
+}
+
+/* Empty State */
+.admin-screens-empty {
+  text-align: center;
+  padding: 20px;
+  color: #a0a0a0;
+}
+
+/* Modal */
+.admin-screens-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.admin-screens-modal-content {
+  background-color: var(--card-bg);
+  padding: 24px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
+}
+
+.admin-screens-modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.admin-screens-cancel-btn,
+.admin-screens-save-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.admin-screens-cancel-btn {
+  background-color: #333;
+  color: var(--primary-text);
+}
+
+.admin-screens-cancel-btn:hover {
+  background-color: #444;
+}
+
+.admin-screens-save-btn {
+  background-color: var(--accent-color);
+  color: #121212;
+}
+
+.admin-screens-save-btn:hover {
+  background-color: var(--accent-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-screens-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-screens-table th,
+  .admin-screens-table td {
+    padding: 8px 12px;
+  }
+}

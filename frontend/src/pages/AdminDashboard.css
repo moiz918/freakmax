@@ -1,0 +1,228 @@
+.AdminDashboardContainer {
+  min-height: 100vh;
+  background: #000000;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: #ff6600;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 20px;
+}
+
+.AdminDashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ff6600;
+}
+
+.AdminDashboardTitle {
+  font-size: 2.5rem;
+  color: #ff6600;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+  letter-spacing: 0.2rem;
+}
+
+.AdminDashboardLogoutButton {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.AdminDashboardLogoutButton:hover {
+  background-color: #c9302c;
+  transform: translateY(-2px);
+}
+
+.AdminDashboardProfileSection {
+  background-color: rgba(26, 26, 26, 0.9);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+}
+
+.AdminDashboardProfileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.AdminDashboardProfileTitle {
+  font-size: 1.8rem;
+  color: #ff6600;
+  letter-spacing: 1px;
+}
+
+.AdminDashboardEditButton {
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.AdminDashboardEditButton:hover {
+  background-color: #ff8533;
+  transform: translateY(-2px);
+}
+
+.AdminDashboardProfileInfo {
+  display: grid;
+  gap: 10px;
+}
+
+.AdminDashboardProfileDetail {
+  font-size: 1.2rem;
+  color: #ff9933;
+}
+
+.AdminDashboardProfileLabel {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.AdminDashboardProfileForm {
+  display: grid;
+  gap: 15px;
+}
+
+.AdminDashboardFormGroup {
+  display: grid;
+  gap: 5px;
+}
+
+.AdminDashboardFormLabel {
+  color: #ff6600;
+  font-size: 1.1rem;
+}
+
+.AdminDashboardFormInput {
+  width: 100%;
+  padding: 10px;
+  background: rgba(26, 26, 26, 0.9);
+  border: 1px solid #ff6600;
+  border-radius: 5px;
+  color: #ff6600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.AdminDashboardFormInput:focus {
+  outline: none;
+  border-color: #ff9933;
+  box-shadow: 0 0 10px rgba(255, 153, 51, 0.5);
+}
+
+.AdminDashboardErrorMessage {
+  color: #ff3333;
+  background: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #ff3333;
+}
+
+.AdminDashboardSuccessMessage {
+  color: #5cb85c;
+  background: rgba(92, 184, 92, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #5cb85c;
+}
+
+.AdminDashboardFormActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.AdminDashboardSaveButton {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.AdminDashboardSaveButton:hover {
+  background-color: #4cae4c;
+  transform: translateY(-2px);
+}
+
+.AdminDashboardCancelButton {
+  padding: 10px 20px;
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+.AdminDashboardCancelButton:hover {
+  background-color: #eea236;
+  transform: translateY(-2px);
+}
+
+.AdminDashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.AdminDashboardGridButton {
+  background-color: rgba(26, 26, 26, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ff6600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.AdminDashboardGridButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 102, 0, 0.3);
+  background-color: rgba(40, 40, 40, 0.9);
+}
+
+.AdminDashboardGridButtonTitle {
+  font-size: 1.5rem;
+  color: #ff6600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.AdminDashboardGridButtonDescription {
+  color: #ff9933;
+  font-size: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');

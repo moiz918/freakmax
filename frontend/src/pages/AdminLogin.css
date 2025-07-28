@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.login-container2 {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.login-box2 {
+  background-color: #121212;
+  padding: 3rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn2 1.5s ease-in-out;
+}
+
+.login-title2 {
+  font-size: 3rem;
+  color: #ff6600;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.6);
+}
+
+.login-form2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grou2,
+.form-group2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-grou2 label,
+.form-group2 label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ff6600;
+  letter-spacing: 0.05rem;
+}
+
+.form-grou2 input,
+.form-group2 input {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background-color: #1f1f1f;
+  color: white;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(255, 102, 0, 0.3);
+  transition: 0.3s;
+}
+
+.form-grou2 input:focus,
+.form-group2 input:focus {
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.7);
+}
+
+.login-button2 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff6600;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.login-button2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 102, 0, 0.5);
+}
+
+.login-button2::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 75%
+  );
+  background-size: 400% 400%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.login-button2:hover::after {
+  opacity: 1;
+  animation: shine2 1.5s infinite;
+}
+
+.error-message2 {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff0000;
+  color: #ff4d4d;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+@keyframes fadeIn2 {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shine2 {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

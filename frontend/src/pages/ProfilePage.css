@@ -1,0 +1,589 @@
+.ProfilePageContainer {
+    min-height: 100vh;
+    background: #000000;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 20px;
+}
+
+.ProfilePageNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(26, 26, 26, 0.9);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.ProfilePageNavLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.ProfilePageNavLink {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageNavLink:hover {
+    background-color: rgba(255, 102, 0, 0.1);
+}
+
+.ProfilePageLogoutButton {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageLogoutButton:hover {
+    background-color: #c9302c;
+}
+
+.ProfilePageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ProfilePageTitle {
+    font-size: 2.5rem;
+    color: #ff6600;
+    text-shadow: 0 0 10px rgba(255, 102, 0, 0.5);
+    letter-spacing: 0.2rem;
+}
+
+.ProfilePageHomeButton {
+    padding: 8px 15px;
+    background-color: #ff6600;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageHomeButton:hover {
+    background-color: #ff8533;
+}
+
+.ProfilePageContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.ProfilePageUserInfo {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.ProfilePageSectionTitle {
+    font-size: 1.8rem;
+    color: #ff6600;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff6600;
+    padding-bottom: 5px;
+}
+
+.ProfilePageEditForm {
+    display: grid;
+    gap: 15px;
+}
+
+.ProfilePageFormGroup {
+    display: grid;
+    gap: 5px;
+}
+
+.ProfilePageFormLabel {
+    color: #ff6600;
+    font-size: 1.1rem;
+}
+
+.ProfilePageFormInput {
+    width: 100%;
+    padding: 10px;
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    color: #ff6600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageFormInput:focus {
+    outline: none;
+    border-color: #ff9933;
+    box-shadow: 0 0 10px rgba(255, 153, 51, 0.5);
+}
+
+.ProfilePageFormActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.ProfilePageSaveButton {
+    padding: 10px 15px;
+    background-color: #ff6600;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageSaveButton:hover {
+    background-color: #ff8533;
+}
+
+.ProfilePageCancelButton {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageCancelButton:hover {
+    background-color: rgba(255, 102, 0, 0.1);
+}
+
+.ProfilePageUserDetails {
+    display: grid;
+    gap: 10px;
+}
+
+.ProfilePageUserDetail {
+    font-size: 1.1rem;
+}
+
+.ProfilePageDetailLabel {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.ProfilePageUserActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.ProfilePageEditButton {
+    padding: 8px 15px;
+    background-color: #ff6600;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageEditButton:hover {
+    background-color: #ff8533;
+}
+
+.ProfilePageDeleteButton {
+    padding: 8px 15px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageDeleteButton:hover {
+    background-color: #c9302c;
+}
+
+.ProfilePageConfirmationModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.ProfilePageModalContent {
+    background-color: rgba(26, 26, 26, 0.95);
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.5);
+}
+
+.ProfilePageModalTitle {
+    color: #ff6600;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.ProfilePageModalText {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.ProfilePageModalActions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ProfilePageConfirmDeleteButton {
+    padding: 10px 15px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageConfirmDeleteButton:hover {
+    background-color: #c9302c;
+}
+
+.ProfilePageCancelDeleteButton {
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageCancelDeleteButton:hover {
+    background-color: rgba(255, 102, 0, 0.1);
+}
+
+.ProfilePageBookings {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.ProfilePageBookingList {
+    display: grid;
+    gap: 15px;
+}
+
+.ProfilePageBookingItem {
+    background-color: rgba(40, 40, 40, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #ff6600;
+}
+
+.ProfilePageBookingDetails {
+    display: grid;
+    gap: 5px;
+}
+
+.ProfilePageBookingDetail {
+    font-size: 1rem;
+}
+
+.ProfilePageBookingActions {
+    margin-top: 10px;
+}
+
+.ProfilePageCancelBookingButton {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageCancelBookingButton:hover {
+    background-color: #c9302c;
+}
+
+.ProfilePagePayments {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.ProfilePagePaymentsTableContainer {
+    overflow-x: auto;
+}
+
+.ProfilePagePaymentsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ProfilePagePaymentsTableHead {
+    background-color: rgba(255, 102, 0, 0.2);
+}
+
+.ProfilePagePaymentsTableHead th {
+    padding: 10px;
+    text-align: left;
+    color: #ff6600;
+    border-bottom: 1px solid #ff6600;
+}
+
+.ProfilePagePaymentsTableBody tr {
+    border-bottom: 1px solid rgba(255, 102, 0, 0.1);
+}
+
+.ProfilePagePaymentsTableBody tr:last-child {
+    border-bottom: none;
+}
+
+.ProfilePagePaymentRow td {
+    padding: 10px;
+}
+
+.ProfilePagePaymentStatus {
+    font-weight: bold;
+}
+
+.ProfilePagePaymentStatusCompleted {
+    color: #5cb85c;
+}
+
+.ProfilePagePaymentStatusPending {
+    color: #f0ad4e;
+}
+
+.ProfilePagePaymentStatusFailed {
+    color: #d9534f;
+}
+
+.ProfilePageComplaints {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.ProfilePageAddComplaint {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ProfilePageComplaintTextarea {
+    width: 100%;
+    padding: 10px;
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    color: #ff6600;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.ProfilePageSubmitComplaintButton {
+    padding: 8px 15px;
+    background-color: #ff6600;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    justify-self: start;
+}
+
+.ProfilePageSubmitComplaintButton:hover {
+    background-color: #ff8533;
+}
+
+.ProfilePageComplaintList {
+    display: grid;
+    gap: 15px;
+}
+
+.ProfilePageComplaintItem {
+    background-color: rgba(40, 40, 40, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #ff6600;
+}
+
+.ProfilePageComplaintDetails {
+    display: grid;
+    gap: 10px;
+}
+
+.ProfilePageComplaintText {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.ProfilePageComplaintActions {
+    display: flex;
+    gap: 10px;
+}
+
+.ProfilePageEditComplaintButton {
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageEditComplaintButton:hover {
+    background-color: #ff8533;
+}
+
+.ProfilePageDeleteComplaintButton {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageDeleteComplaintButton:hover {
+    background-color: #c9302c;
+}
+
+.ProfilePageEditComplaint {
+    display: grid;
+    gap: 10px;
+}
+
+.ProfilePageEditComplaintTextarea {
+    width: 100%;
+    padding: 10px;
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    color: #ff6600;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.ProfilePageEditComplaintActions {
+    display: flex;
+    gap: 10px;
+}
+
+.ProfilePageUpdateComplaintButton {
+    padding: 5px 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageUpdateComplaintButton:hover {
+    background-color: #4cae4c;
+}
+
+.ProfilePageCancelEditComplaintButton {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.ProfilePageCancelEditComplaintButton:hover {
+    background-color: rgba(255, 102, 0, 0.1);
+}
+
+.ProfilePageDiscounts {
+    background-color: rgba(26, 26, 26, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+}
+
+.ProfilePageDiscountList {
+    display: grid;
+    gap: 15px;
+}
+
+.ProfilePageDiscountItem {
+    background-color: rgba(40, 40, 40, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 3px solid #ff6600;
+}
+
+.ProfilePageDiscountDetail {
+    font-size: 1rem;
+}
+
+.ProfilePageNoData {
+    color: #ff9933;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+
+.ProfilePageLoading {
+    color: #ff6600;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px;
+}
+
+.ProfilePageErrorMessage {
+    color: #d9534f;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(217, 83, 79, 0.1);
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
